@@ -3,7 +3,7 @@
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/ulrik-holtan-428a16235)
 [![GitHub](https://img.shields.io/badge/GitHub-grey?style=for-the-badge&logo=github)](https://github.com/ulrikholtan)
 
-This is my GitHub organization for all finished exams, tasks, and courses I complete.
+This is my GitHub organization for all finished exams.
 
 ## Høyskolen Kristiania - Cybersecurity
 
