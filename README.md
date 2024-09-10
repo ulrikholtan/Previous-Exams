@@ -8,10 +8,16 @@ This is my GitHub organization for all finished exams.
 ## Høyskolen Kristiania - Cybersecurity
 
 ### First Semester
-No Content
+
+- [DB1102, Databaser, EKSAMEN (Bestått)](https://github.com/ulrikholtan/Previous-Exams/tree/feaf5f212ee650f1667f0aba89d11fbd1fc5a4b8/DB1102-Databaser)
+- [TK1104, Digital-teknologi, EKSAMEN (Bestått)](https://github.com/ulrikholtan/Previous-Exams/tree/feaf5f212ee650f1667f0aba89d11fbd1fc5a4b8/TK1104-Digital-teknologi)
+- [PRO105, Kreativt-webprosjekt, EKSAMEN (Bestått)](https://github.com/ulrikholtan/Previous-Exams/tree/feaf5f212ee650f1667f0aba89d11fbd1fc5a4b8/PRO105-kreativt-webprosjekt)
+- [PGR102, Introduksjon-til-programmering, EKSAMEN (Bestått)](https://github.com/ulrikholtan/Previous-Exams/tree/feaf5f212ee650f1667f0aba89d11fbd1fc5a4b8/PGR102-Introduksjon-til-programmering)
 
 ### Second Semester
-No Content
+- [TK2100, Informasjonssikkerhet, EKSAMEN (Bestått)](https://github.com/ulrikholtan/Previous-Exams/tree/94c9482ab438b63c70b97dc146ab44acadd502f4/TK2100-Informasjonssikkerhet)
+- PGR110, Visual Analytics, EKSAMEN (Bestått)
+- PGR112, Objektorientert Programmering (Java), EKSAMEN (Bestått)
 
 ### Third Semester
 - [SKY2100, Cloud Security, EKSAMEN (A)](https://github.com/ulrikholtan/Previous-Exams/tree/c5caa8ad3edd53ded400bda88aec400dc8bf2ea0/SKY2100-Cloudsecurity)
@@ -25,3 +31,6 @@ No Content
 - [PG4200, Algorithms and Datastructures, EKSAMEN, (B)](https://github.com/ulrikholtan/Previous-Exams/tree/5ed784f9c3b476d0763637226a7162506850b208/PG4200-Algorithms-and-Datastructures)
 
 ### Fifth Semester
+- [GRC110, Governance, Risk and Compliance]
+- [IOS3100, IoT/OT sikkerhet]
+- [PJ6100, Undersøkelsesmetoder]
