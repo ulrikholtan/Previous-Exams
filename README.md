@@ -15,11 +15,13 @@ This is my GitHub organization for all finished exams.
 - [PGR102, Introduksjon-til-programmering, EKSAMEN (Bestått)](https://github.com/ulrikholtan/Previous-Exams/tree/06aa1b29be2c8b650434edb3edde61eaa01d7cf3/PGR102-Introduksjon-til-programmering)
 
 ### Second Semester
+
 - [TK2100, Informasjonssikkerhet, EKSAMEN (Bestått)](https://github.com/ulrikholtan/Previous-Exams/tree/94c9482ab438b63c70b97dc146ab44acadd502f4/TK2100-Informasjonssikkerhet)
 - PGR110, Visual Analytics, EKSAMEN (Bestått)
 - PGR112, Objektorientert Programmering (Java), EKSAMEN (Bestått)
 
 ### Third Semester
+
 - [SKY2100, Cloud Security, EKSAMEN (A)](https://github.com/ulrikholtan/Previous-Exams/tree/c5caa8ad3edd53ded400bda88aec400dc8bf2ea0/SKY2100-Cloudsecurity)
 - [CYB2100, Cyberforsvar, EKSAMEN (B)](https://github.com/ulrikholtan/Previous-Exams/tree/c5caa8ad3edd53ded400bda88aec400dc8bf2ea0/CYB2100-Cyberforsvar)
 - [ETH2100, Etisk Hacking, EKSAMEN (B)](https://github.com/ulrikholtan/Previous-Exams/tree/c5caa8ad3edd53ded400bda88aec400dc8bf2ea0/ETH2100-Etisk-Hacking)
@@ -31,6 +33,7 @@ This is my GitHub organization for all finished exams.
 - [PG4200, Algorithms and Datastructures, EKSAMEN, (B)](https://github.com/ulrikholtan/Previous-Exams/tree/808889e31f888bc48ca65085660d40bb84806980/PG4200-Algorithms-and-Datastructures)
 
 ### Fifth Semester
-- GRC110, Governance, Risk and Compliance
+
 - IOS3100, IoT/OT sikkerhet
 - PJ6100, Undersøkelsesmetoder
+- GRC110, Governance, Risk and Compliance
