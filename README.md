@@ -31,6 +31,6 @@ This is my GitHub organization for all finished exams.
 - [PG4200, Algorithms and Datastructures, EKSAMEN, (B)](https://github.com/ulrikholtan/Previous-Exams/tree/5ed784f9c3b476d0763637226a7162506850b208/PG4200-Algorithms-and-Datastructures)
 
 ### Fifth Semester
-- [GRC110, Governance, Risk and Compliance]
-- [IOS3100, IoT/OT sikkerhet]
-- [PJ6100, Undersøkelsesmetoder]
+- GRC110, Governance, Risk and Compliance
+- IOS3100, IoT/OT sikkerhet
+- PJ6100, Undersøkelsesmetoder
