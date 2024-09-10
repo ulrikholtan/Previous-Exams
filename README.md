@@ -22,9 +22,9 @@ This is my GitHub organization for all finished exams.
 
 ### Third Semester
 
-- [SKY2100, Cloud Security, EKSAMEN (A)](https://github.com/ulrikholtan/Previous-Exams/tree/c5caa8ad3edd53ded400bda88aec400dc8bf2ea0/SKY2100-Cloudsecurity)
 - [CYB2100, Cyberforsvar, EKSAMEN (B)](https://github.com/ulrikholtan/Previous-Exams/tree/c5caa8ad3edd53ded400bda88aec400dc8bf2ea0/CYB2100-Cyberforsvar)
 - [ETH2100, Etisk Hacking, EKSAMEN (B)](https://github.com/ulrikholtan/Previous-Exams/tree/c5caa8ad3edd53ded400bda88aec400dc8bf2ea0/ETH2100-Etisk-Hacking)
+- [SKY2100, Cloud Security, EKSAMEN (A)](https://github.com/ulrikholtan/Previous-Exams/tree/c5caa8ad3edd53ded400bda88aec400dc8bf2ea0/SKY2100-Cloudsecurity)
 
 ### Fourth Semester
 
