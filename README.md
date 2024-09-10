@@ -28,7 +28,7 @@ This is my GitHub organization for all finished exams.
 
 - [PGR3401, C, EKSAMEN (A)](https://github.com/ulrikholtan/Previous-Exams/tree/cf7fd866d57f0de1477311977fb1e9f4dcbecc53/PG3401-C)
 - [PRO202, Smidig Prosjekt, EKSAMEN, (A)](https://github.com/ulrikholtan/Previous-Exams/tree/5ed784f9c3b476d0763637226a7162506850b208/PRO202-Smidig-prosjekt)
-- [PG4200, Algorithms and Datastructures, EKSAMEN, (B)](https://github.com/ulrikholtan/Previous-Exams/tree/5ed784f9c3b476d0763637226a7162506850b208/PG4200-Algorithms-and-Datastructures)
+- [PG4200, Algorithms and Datastructures, EKSAMEN, (B)](https://github.com/ulrikholtan/Previous-Exams/tree/808889e31f888bc48ca65085660d40bb84806980/PG4200-Algorithms-and-Datastructures)
 
 ### Fifth Semester
 - GRC110, Governance, Risk and Compliance
