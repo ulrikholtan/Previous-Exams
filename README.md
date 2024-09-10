@@ -9,28 +9,28 @@ This is my GitHub organization for all finished exams.
 
 ### First Semester
 
-- [DB1102, Databaser, EKSAMEN (Bestått)](https://github.com/ulrikholtan/Previous-Exams/tree/feaf5f212ee650f1667f0aba89d11fbd1fc5a4b8/DB1102-Databaser)
-- [TK1104, Digital-teknologi, EKSAMEN (Bestått)](https://github.com/ulrikholtan/Previous-Exams/tree/feaf5f212ee650f1667f0aba89d11fbd1fc5a4b8/TK1104-Digital-teknologi)
-- [PRO105, Kreativt-webprosjekt, EKSAMEN (Bestått)](https://github.com/ulrikholtan/Previous-Exams/tree/feaf5f212ee650f1667f0aba89d11fbd1fc5a4b8/PRO105-kreativt-webprosjekt)
-- [PGR102, Introduksjon-til-programmering, EKSAMEN (Bestått)](https://github.com/ulrikholtan/Previous-Exams/tree/06aa1b29be2c8b650434edb3edde61eaa01d7cf3/PGR102-Introduksjon-til-programmering)
+- [DB1102, Databaser, EKSAMEN (Bestått)](https://github.com/ulrikholtan/Previous-Exams/tree/8282eaa92a89572782ba61b58e7d1cb632afee1f/DB1102-Databaser)
+- [TK1104, Digital-teknologi, EKSAMEN (Bestått)](https://github.com/ulrikholtan/Previous-Exams/tree/8282eaa92a89572782ba61b58e7d1cb632afee1f/TK1104-Digital-teknologi)
+- [PRO105, Kreativt-webprosjekt, EKSAMEN (Bestått)](https://github.com/ulrikholtan/Previous-Exams/tree/8282eaa92a89572782ba61b58e7d1cb632afee1f/PRO105-kreativt-webprosjekt)
+- [PGR102, Introduksjon-til-programmering, EKSAMEN (Bestått)](https://github.com/ulrikholtan/Previous-Exams/tree/8282eaa92a89572782ba61b58e7d1cb632afee1f/PGR102-Introduksjon-til-programmering)
 
 ### Second Semester
 
-- [TK2100, Informasjonssikkerhet, EKSAMEN (Bestått)](https://github.com/ulrikholtan/Previous-Exams/tree/94c9482ab438b63c70b97dc146ab44acadd502f4/TK2100-Informasjonssikkerhet)
+- [TK2100, Informasjonssikkerhet, EKSAMEN (Bestått)](https://github.com/ulrikholtan/Previous-Exams/tree/8282eaa92a89572782ba61b58e7d1cb632afee1f/TK2100-Informasjonssikkerhet)
 - PGR110, Visual Analytics, EKSAMEN (Bestått)
 - PGR112, Objektorientert Programmering (Java), EKSAMEN (Bestått)
 
 ### Third Semester
 
-- [CYB2100, Cyberforsvar, EKSAMEN (B)](https://github.com/ulrikholtan/Previous-Exams/tree/10bf3adcb8c23980a3378092fb32a9541d80b9e3/CYB2100-Cyberforsvar)
-- [ETH2100, Etisk Hacking, EKSAMEN (B)](https://github.com/ulrikholtan/Previous-Exams/tree/10bf3adcb8c23980a3378092fb32a9541d80b9e3/ETH2100-Etisk-Hacking)
-- [SKY2100, Cloud Security, EKSAMEN (A)](https://github.com/ulrikholtan/Previous-Exams/tree/10bf3adcb8c23980a3378092fb32a9541d80b9e3/SKY2100-Cloudsecurity)
+- [CYB2100, Cyberforsvar, EKSAMEN (B)](https://github.com/ulrikholtan/Previous-Exams/tree/8282eaa92a89572782ba61b58e7d1cb632afee1f/CYB2100-Cyberforsvar)
+- [ETH2100, Etisk Hacking, EKSAMEN (B)](https://github.com/ulrikholtan/Previous-Exams/tree/8282eaa92a89572782ba61b58e7d1cb632afee1f/ETH2100-Etisk-Hacking)
+- [SKY2100, Cloud Security, EKSAMEN (A)](https://github.com/ulrikholtan/Previous-Exams/tree/8282eaa92a89572782ba61b58e7d1cb632afee1f/SKY2100-Cloudsecurity)
 
 ### Fourth Semester
 
-- [PGR3401, C, EKSAMEN (A)](https://github.com/ulrikholtan/Previous-Exams/tree/cf7fd866d57f0de1477311977fb1e9f4dcbecc53/PG3401-C)
-- [PRO202, Smidig Prosjekt, EKSAMEN, (A)](https://github.com/ulrikholtan/Previous-Exams/tree/5ed784f9c3b476d0763637226a7162506850b208/PRO202-Smidig-prosjekt)
-- [PG4200, Algorithms and Datastructures, EKSAMEN, (B)](https://github.com/ulrikholtan/Previous-Exams/tree/808889e31f888bc48ca65085660d40bb84806980/PG4200-Algorithms-and-Datastructures)
+- [PGR3401, C, EKSAMEN (A)](https://github.com/ulrikholtan/Previous-Exams/tree/8282eaa92a89572782ba61b58e7d1cb632afee1f/PG3401-C)
+- PRO202, Smidig Prosjekt, EKSAMEN, (A)
+- [PG4200, Algorithms and Datastructures, EKSAMEN, (B)](https://github.com/ulrikholtan/Previous-Exams/tree/8282eaa92a89572782ba61b58e7d1cb632afee1f/PG4200-Algorithms-and-Datastructures)
 
 ### Fifth Semester
 
