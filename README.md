@@ -35,7 +35,7 @@ This is my GitHub organization for all finished exams.
 - PRO202, Smidig Prosjekt, EKSAMEN (A)
 - [PG4200, Algorithms and Datastructures, EKSAMEN (B)](https://github.com/ulrikholtan/Previous-Exams/tree/34cfd87ed6adefa16a525227f093297391bc7701/PG4200-Algorithms-and-Datastructures-Exam)
 
-### Fifth Semester
+### Fifth Semester (Fall 24)
 
 - IOS3100, IoT/OT sikkerhet
 - PJ6100, Undersøkelsesmetoder
