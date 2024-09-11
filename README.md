@@ -12,7 +12,7 @@ This is my GitHub organization for all finished exams.
 - [DB1102, Databaser, EKSAMEN (Bestått)](https://github.com/ulrikholtan/Previous-Exams/tree/8282eaa92a89572782ba61b58e7d1cb632afee1f/DB1102-Databaser)
 - [TK1104, Digital-teknologi, EKSAMEN (Bestått)](https://github.com/ulrikholtan/Previous-Exams/tree/8282eaa92a89572782ba61b58e7d1cb632afee1f/TK1104-Digital-teknologi)
 - [PRO105, Kreativt-webprosjekt, EKSAMEN (Bestått)](https://github.com/ulrikholtan/Previous-Exams/tree/8282eaa92a89572782ba61b58e7d1cb632afee1f/PRO105-kreativt-webprosjekt)
-- [PGR102, Introduksjon-til-programmering, EKSAMEN (Bestått)](https://github.com/ulrikholtan/Previous-Exams/tree/8282eaa92a89572782ba61b58e7d1cb632afee1f/PGR102-Introduksjon-til-programmering)
+- [PGR102, Introduksjon-til-programmering, EKSAMEN (Bestått)](https://github.com/ulrikholtan/Previous-Exams/tree/8ead0d1c8bc2ca061b8462c787a001cd302702ca/PGR102-Introduksjon-til-programmering)
 - - [PGR102, Introduksjon-til-programmering, Arbeidskrav (Bestått)](https://github.com/ulrikholtan/Previous-Exams/tree/0dc3762b48758a78f45d91a346a9117ff2251b37/PGR102-Introduksjon-til-programmering-Arbeidskrav)
 
 ### Second Semester
