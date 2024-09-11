@@ -1,0 +1,23 @@
+# Oppgave_2
+
+Kort beskrivelse av innholdet i mappen
+
+## Kompilering
+
+Det ligger en makefile i mappen, for å benytte seg av denne benytt deg enkelt av kommandoen 'make'.
+
+Det vil da bli opprettet en fil som heter ex2, kjør denne med kommandoen './ex2'
+
+Denne vil da lese filen 'oppgave2.txt', behandle dataene og lagre dem i en struct med attributter
+for hvert ord. Den vil da skrive metadataen for hvert of til en binær fil, 'utdata.bin', 
+før den stenger ned.
+
+## Ekstra
+
+Ettersom jeg ønsket å validere at den hadde korrekt skrevet den binære dataen til filen 'utdata.bin'
+laget jeg et tilleggsprogram, 'binaryreader.c' som kan bli brukt for å lese denne dataen.
+
+Ettersom jeg allerede hadde lagt denne inn i mappen, tenkte jeg at jeg kunne la denne ligge og
+heller gi instrukser om bruk.
+Kjør kommandoen 'gcc -O2 -o binaryreader binaryreader.c' og du får opprettet filen 'binaryreader'
+Kjør denne med kommandoen './binaryreader <filnavn.bin>'. I dette tilfellet 'utdata.bin'
