@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>POKéMON</title>
+    <link rel="stylesheet" href="./styling.css" />
+  </head>
+  <body>
+    <!-- Make a div to give background for the entire webpage -->
+    <div id="main-background">
+      <!-- Div to make the overlay of the gameboy -->
+      <div>
+        <img src="./images/gameboy-overlay.png" alt="" class="gameboy-class" />
+      </div>
+      <div class="flexbox-container">
+        <!-- Flexbox item for the Squirtle card starts here -->
+        <div class="flexbox-item flexbox-item-1">
+          <div class="pokemon-card-container">
+            <div class="pokemon-card">
+              <div class="squirtle-background">
+                <img
+                  src="./images/squirtle-classic.gif"
+                  alt=""
+                  class="pokemon-animation"
+                />
+              </div>
+              <div class="squirtle-content">
+                <h1 class="pokemon-name">Squirtle</h1>
+                <span class="pokemon-type">Water</span>
+
+                <div class="pokemon-info">
+                  <p>
+                    Squirtle is a small, light-blue Pokémon with an appearance
+                    similar to a turtle. With its aerodynamic shape and grooved
+                    surface, Squirtle's shell helps it wade through the water
+                    very quickly. It also offers protection in battle.
+                  </p>
+                </div>
+                <h1 class="pokemon-logo">Pokemon Information</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Flexbox item for the Charmander card starts here -->
+        <div class="flexbox-item flexbox-item-2">
+          <div class="pokemon-card-container">
+            <div class="pokemon-card">
+              <div class="charmander-background">
+                <img
+                  src="./images/charmander-classic.gif"
+                  alt=""
+                  class="pokemon-animation"
+                />
+              </div>
+              <div class="charmander-content">
+                <h1 class="pokemon-name">Charmander</h1>
+                <span class="pokemon-type">Fire</span>
+                <div class="pokemon-info">
+                  <p>
+                    Charmander is a small, bipedal, dinosaur-like Pokémon. Most
+                    of its body is colored orange, while its underbelly is a
+                    pale light-yellow color. It has four small fingers on each
+                    hand and three claws on each foot.
+                  </p>
+                </div>
+                <h1 class="pokemon-logo">Pokemon Information</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Flexbox item for the Bulbasaur card starts here -->
+        <div class="flexbox-item flexbox-item-3">
+          <div class="pokemon-card-container">
+            <div class="pokemon-card">
+              <div class="bulbasaur-background">
+                <img
+                  src="./images/bulba-classic.gif"
+                  alt=""
+                  class="pokemon-animation"
+                />
+              </div>
+              <div class="bulbasaur-content">
+                <h1 class="pokemon-name">Bulbasaur</h1>
+                <span class="pokemon-type">Grass</span>
+                <div class="pokemon-info">
+                  <p>
+                    Bulbasaur resembles a small amphibian/frog, but it bears
+                    three claws on each of its feet and has no tail. It also has
+                    large, red eyes and small, sharp teeth. Its skin is a light,
+                    turquoise color with dark, green spots.
+                  </p>
+                </div>
+                <h1 class="pokemon-logo">Pokemon Information</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Container for the pokeballs -->
+    <div class="Pokeball-container">
+      <div class="left-pokeball poke">
+        <img src="./images/pokeball-shake.gif" alt="left-pokeball" />
+      </div>
+      <div class="middle-pokeball poke">
+        <img src="./images/pokeball-shake.gif" alt="middle-pokeball" />
+      </div>
+      <div class="right-pokeball poke">
+        <img src="./images/pokeball-shake.gif" alt="right-pokeball" />
+      </div>
+    </div>
+    <!-- Element for chatbox -->
+    <div>
+      <img src="./images/oak-talk.gif" alt="prof-oak" class="prof-oak" />
+    </div>
+    <!-- Elements for the pokemon logo -->
+    <div>
+      <img
+        src="./images/pokemon-logo.png"
+        alt=""
+        class="main-logo pokemon-logo-main"
+        onclick="location.href='./index.html';"
+      />
+      <img
+        src="./images/nerd-image.png"
+        alt=""
+        class="main-logo nerd-logo-main"
+      />
+      <img
+        src="./images/pixel-walk.gif"
+        id="ash-pikachu-shaker"
+        alt="shaking-pikachu"
+      />
+    </div>
+    <audio controls class="music-player">
+      <source src="./audio/professor-oak.flac" type="audio/mpeg" />
+    </audio>
+  </body>
+</html>
