@@ -33,7 +33,7 @@ This is my GitHub organization for all finished exams.
 
 - [PGR3401, C, EKSAMEN (A)](https://github.com/ulrikholtan/Previous-Exams/tree/34cfd87ed6adefa16a525227f093297391bc7701/PG3401-C-Eksamen)
 - PRO202, Smidig Prosjekt, EKSAMEN, (A)
-- [PG4200, Algorithms and Datastructures, EKSAMEN, (B)](https://github.com/ulrikholtan/Previous-Exams/tree/34cfd87ed6adefa16a525227f093297391bc7701/PG4200-Algorithms-and-Datastructures-Exam)
+- [PG4200, Algorithms and Datastructures, EKSAMEN (B)](https://github.com/ulrikholtan/Previous-Exams/tree/34cfd87ed6adefa16a525227f093297391bc7701/PG4200-Algorithms-and-Datastructures-Exam)
 
 ### Fifth Semester
 
