@@ -1,0 +1,353 @@
+/* Svein og Trine har samarbeidet mye sammen på hele denne kodingen, men har delt inn sånn ca. hva vi gjorde selv.*/
+/* Alle grunnelggende regler er satt av Svein */
+
+/* Side oppsett */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.fonts {
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding-left: 8%;
+  padding-right: 8%;
+}
+
+/* Kontainere med alle hovedelementene på hver side */
+.items-box {
+  position: relative;
+  display: flex;
+  align-items: baseline;
+}
+
+/* Overskrift og tekst */
+.headder {
+  text-shadow: 1px 1px 5px #73b2d9;
+}
+
+h1 {
+  color: #fff;
+  font-size: 60px;
+}
+
+h2 {
+  color: #fff;
+}
+
+h5 {
+  color: #fff;
+  text-shadow: 0 0 5px #999;
+}
+
+p {
+  color: #fff;
+  font-size: 12px;
+  line-height: 11px;
+}
+
+/* Kortene */
+.cards-box {
+  display: flex;
+  flex-direction: row;
+}
+
+.card {
+  width: 200px;
+  height: 230px;
+  border-radius: 10px;
+  padding: 15px 25px;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin: 10px 15px;
+  background-position: center;
+  background-size: cover;
+  transition: transform 0.5s;
+}
+
+.card p {
+  text-shadow: 0 0 15px #000;
+  font-size: 8px;
+}
+
+/* Informasjons-bokser. Som er skrevet i egene ord. Inspirasjon fra info fra søk i google, og om dyrene fra snl.no. Laget av Trine*/
+.info-box {
+  position: absolute;
+  display: none;
+  bottom: 20%;
+  left: 2%;
+}
+
+.info-box p {
+  color: #fff;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+/* Side 1*/
+
+/* Bakgrunnsbilde og farger av Svein */
+#font {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(images/nsw-background-1.jpg);
+}
+
+/* Tilbake knapp (til forsiden) av Svein*/
+#logo {
+  background: URL("/images/logo-flag.png");
+  width: 30%;
+  height: 30%;
+}
+
+/* Ting å gjøre i NSW av Svein*/
+#bondi-card {
+  background-image: url(images/bondi-beach.jpg);
+}
+
+#opera-card {
+  background-image: url(images/opera-house.jpeg);
+}
+
+#darling-card {
+  background-image: url(images/darling-harbour.png);
+}
+
+#mountains-card {
+  background-image: url(images/blue-mountains.jpg);
+}
+
+#hunter-valley-card {
+  background-image: url(images/hunter-valley.jpg);
+}
+
+#Kosciuszko-park-card {
+  background-image: url(images/kosciuszko.jpeg)
+}
+
+/* Hover effektene av Trine (bortsett fra class.card hover den har Svein skrevet og laget*/
+.card:hover {
+  transform: translateY(-10px);
+}
+
+#bondi-card:hover ~ #bondi-info-box {
+  display: block;
+}
+
+#bondi-card:hover ~ .sydney-pointer-box {
+  display: block;
+}
+
+#opera-card:hover ~ #opera-house-info-box {
+  display: block;
+}
+
+#opera-card:hover ~ .sydney-pointer-box {
+  display: block;
+}
+
+#darling-card:hover ~ #darling-harbour-box {
+  display: block;
+}
+
+#darling-card:hover ~ .sydney-pointer-box {
+  display: block;
+}
+
+#mountains-card:hover ~ #blue-mountains-box {
+  display: block;
+}
+
+#mountains-card:hover ~ .blue-mountains-pointer-box {
+  display: block;
+}
+
+#hunter-valley-card:hover ~ #hunter-valley-box {
+  display: block;
+}
+
+#hunter-valley-card:hover ~ .hunter-valley-pointer-box {
+  display: block;
+}
+
+#Kosciuszko-park-card:hover ~ #Kosciuszko-park-box {
+  display: block;
+}
+
+#Kosciuszko-park-card:hover ~ .kosciuszko-pointer-box {
+  display: block;
+}
+
+/* Her er alle Pinsene for å vise hvor alt er på kartet, laget av Trine*/
+.sydney-pointer-box {
+  position: absolute;
+  left: 12%;
+  bottom: 47%;
+  display: none;
+}
+
+.pointer-img {
+  height: 22%;
+  width: 22%;
+}
+
+.blue-mountains-pointer-box {
+  position: absolute;
+  left: 10.5%;
+  bottom: 50%;
+  display: none;
+}
+
+.hunter-valley-pointer-box {
+  position: absolute;
+  left: 11%;
+  bottom: 51%;
+  display: none;
+}
+
+#hunter-valley-pointer {
+  height: 40%;
+  width: 40%;
+}
+
+.kosciuszko-pointer-box {
+  position: absolute;
+  left: 10%;
+  bottom: 41%;
+  display: none;
+}
+
+/* Side 2*/
+
+/* Bakgrunnsbilde og farger av Svein*/
+#middle-font {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(images/nsw-background-2.jpg);
+}
+
+/* Noen av de mange dyrene man kan se i det ville av Trine */
+#koala-card {
+  background-image: url(images/koala-img.jpeg);
+}
+
+#kangaroos-card {
+  background-image: url(images/kangaroos-img.jpeg);
+}
+
+#dolphin-card {
+  background-image: url(images/short-beaked-dolphin-img.jpg);
+}
+
+#echidna-card {
+  background-image: url(images/echidna-img.jpeg);
+}
+
+#wombat-card {
+  background-image: url(images/wombat-img.jpeg);
+}
+
+#sealion-card {
+  background-image: url(images/sea-lion.jpeg);
+}
+
+
+/* Hover effektene av Trine*/
+#koala-card:hover ~ #koala-info-box {
+  display: block;
+}
+#koala-card:hover ~ .coast-pointer-box {
+  display: block;
+}
+
+#kangaroos-card:hover ~ #kangaroo-info-box {
+  display: block;
+}
+
+#kangaroos-card:hover ~ #kangaroo-pointer-box {
+  display: block;
+}
+
+#wombat-card:hover ~ #wombat-info-box {
+  display: block;
+}
+
+#wombat-card:hover ~ .coast-pointer-box {
+  display: block;
+}
+
+#echidna-card:hover ~ #echidna-info-box {
+  display: block;
+}
+
+#echidna-card:hover ~ #echida-pointer-box {
+  display: block;
+}
+
+#dolphin-card:hover ~ #dolphin-info-box {
+  display: block;
+}
+
+#sealion-card:hover ~ #sealion-info-box {
+  display: block;
+}
+
+/* Stedene dyrene lever i det ville av Trine*/
+.coast {
+  position: absolute;
+  display: none;
+  background-color: #000;
+}
+.coast-pointer-box {
+  left: 11%;
+  bottom: 48%;
+}
+#kangaroo-pointer-box {
+  left: 11%;
+  bottom: 47%;
+  border: solid black 2px;
+}
+#echida-pointer-box {
+  left: 0%;
+  bottom: 47%;
+}
+/* Animasjonen av hval som svømmer langs siden av Svein*/
+.ocean {
+  height: 100px;
+  width: 100%;
+  position: relative;
+  background: rgb(19, 68, 126);
+}
+
+.whale {
+  height: 60%;
+  position: relative;
+  animation-name: left-to-right;
+  animation: left-to-right 10s linear infinite;
+}
+
+@keyframes left-to-right {
+  0% {
+    left: 5%;
+    transform: scaleX(1);
+  }
+
+  49% {
+    left: 85%;
+    transform: scaleX(1);
+  }
+  50%{
+    transform: scaleX(-1);
+    left: 84%;
+  }
+  100%{
+    transform: scaleX(-1);
+    left: 5%;
+  }
+
+}

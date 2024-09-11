@@ -1,0 +1,246 @@
+/* Globale regler */
+*{
+  font-family: "Roboto", sans-serif;
+}
+@font-face {
+  font-family: Queen;
+  src: url(QueenslandFree.ttf);
+}
+/* Gir body en bakgrunn */
+body{
+  background-image: url(images/nature-background-img.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+/* Setter en generell regel for alle h1 tagger */
+h1 {
+  Position: absolute;
+  font-size: 125px;
+  color: #006400;
+  font-family: Queen;
+  left: 15%;
+  top: 2%;
+  text-shadow:0 0 5px #000000;
+}
+/* Setter en generell regel for alle h5 tagger */
+h5 {
+  position: relative;
+  font-size: 20px;
+  text-shadow:0 0 3px black;
+  color: #fff;
+  padding: 10px;
+  text-align: left;
+  top: -7%;
+}
+
+/* Svart transparent bakgrunn */
+#tint {
+  position: fixed;
+  display: inline-block;
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  top: 0px;
+  left: 0px;
+  opacity: 0.6;
+  overflow: scroll;
+}
+
+/* Info om Queensland*/
+#info-box-queensland {
+  display: inline-block;
+  font-size: 17px;
+  bottom: 39%;
+}
+/* Stilsetter for alle info-boxer på siden */
+.info-box {
+  position: absolute;
+  background-color: darkgreen;
+  color: #fff;
+  font-size: 15px;
+  line-height: 1.5;
+  font-weight: bold;
+  border: 2px solid #000000;
+  border-radius: 10px;
+  bottom: 15%;
+  padding: 8px;
+  right: 42%;
+  width: 50%;
+  display: none;
+  text-shadow:0 0 5px #000000;
+}
+
+/* Generell regel for alle card-holder's */
+.card-holder{
+  Position: absolute;
+  width: 250px;
+  height: 300px;
+  margin: auto;
+  border-radius: 10px;
+  box-sizing: border-box;
+  transition: transform 0.5s;
+  background-size: cover;
+}
+/* Her kommer individuell stilsetting av de forskjellige kortene */
+#daintree-rainforest-card {
+  background: url(images/daintree-rainforest-img.jpg);
+  right: 19%;
+  top: 25%;
+  background-size: cover;
+}
+#gold-coast-card {
+  background: url(images/gold-coast-img.jpeg);
+  right: 2%;
+  top: 25%;
+  background-size: cover;
+}
+
+#story-bridge-card {
+  background: url(images/story-bridge-img.jpeg);
+  right: 2%;
+  top: 60%;
+  background-size: cover;
+}
+
+#great-barrier-reef-card {
+  background: url(images/great-barrier-reef-img.jpg);
+  right: 19%;
+  top: 60%;
+  background-size: cover;
+}
+
+/* Hover prosesser */
+/* Animasjonen ved hover på kortene */
+.card-holder:hover {
+  transform: translateY(-10px);
+}
+/* Under kommer reglene for å gjøre info-box'ene synlige ved hover på de respektive cardsene */
+#gold-coast-card:hover~#gold-coast-info {
+  display: block;
+}
+
+#story-bridge-card:hover~#story-bridge-info {
+  display: block;
+}
+
+#daintree-rainforest-card:hover~#daintree-rainforest-info {
+  display: block;
+}
+
+#great-barrier-reef-card:hover~#great-barrier-reef-info {
+  display: block;
+}
+
+/* Blader som faller ned fra toppen av nettsiden*/
+.falling-leaf{
+  background: url(GIFS/leaves-falling.gif);
+  position: absolute;
+  width: 15%;
+  height: 35%;
+  top: 3%;
+  z-index: -1;
+}
+/* Indivuell plassering av bladene */
+#falling-leaf-1 {
+  right: 75%;
+}
+
+#falling-leaf-1 {
+  right: 80%;
+}
+
+#falling-leaf-1 {
+  right: 50%;
+}
+/* Dekorasjon på nettsiden, bladene som henger på toppen av nettsiden*/
+.leaf{
+  position: absolute;
+  width: 30%;
+  height: 30%;
+  top: -7%;
+  z-index: -1;
+}
+#leaf-1 {
+  top: 0;
+  left: 0;
+}
+
+#leaf-2 {
+  left: 20%;
+}
+
+#leaf-3 {
+  top: 100px;
+  left: -10%;
+  transform: rotate(290deg);
+}
+
+#leaf-4 {
+  left: 30%;
+  transform: rotate(10deg);
+}
+
+#leaf-5 {
+  left: 50%;
+  transform: rotate(5deg);
+}
+
+#leaf-6 {
+  right: 0%;
+}
+
+#leaf-7 {
+  right: 30%;
+}
+
+#leaf-8 {
+  right: 60%;
+}
+/* Posisjonering og regler for slangen */
+#Snake{
+Position:absolute;
+Width: 25%;
+Height: 25%;
+Bottom: -60%;
+background:url(images/snake-img.png);
+background-size: cover;
+Left: 1%;
+animation: left-to-right 7s linear infinite;
+}
+/* Keyframes for animasjonen til slangen, for at den skal bevege seg fra side til side */
+@keyframes left-to-right {
+  0% {
+      left: 0%;
+      transform: scaleX(1);
+  }
+  49% {
+      left: 81%;
+      transform: scaleX(1);
+  }
+  50%{
+      transform: scaleX(-1);
+      left: 80%;
+  }
+  100%{
+      left: 0%;
+      transform: scaleX(-1);
+  }
+}
+/* Posisjonering av kenguru bildet */
+#Kangaroo{
+  position: absolute;
+  background:url(images/kangaroo-img.png);
+  width: 11%;
+  height: 19%;
+  right: 4%;
+  top: 5%;
+  background-size: cover;
+}
+/* Hover på kenguruen gjør om bildet til en gif */
+#Kangaroo:hover {
+  background: url(GIFs/kangaroo.gif);
+  background-size: cover;
+  width: 9%;
+}

@@ -1,0 +1,293 @@
+/* Globale regler */
+*{
+  font-family: "Roboto", sans-serif;
+}
+/* Legger til en bakgrunn og plasserer */
+#frontpage-body{
+  background-color: #01699e;
+  background-image: url(images/frontpage-background.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+/* Plassering av heading */
+#main-header{
+  position: absolute;
+  transform: translate(-50%);
+  left: 50%;
+  font-size: 300%;
+}
+/*Posisjoneringen av hovedkartet til senter*/
+#main-map{
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 52%;
+  left: 50%;
+  height: 80%;
+}
+/* Generell regel for alle de utskårede delene av kartet */
+.map-parts{
+  position: absolute;
+  opacity: 0;
+}
+/* Generell regel for kart-delene sin :hover */
+.map-parts:hover{
+  transition: ease 1s;
+  opacity: 100%;
+}
+/* Generell regel for alle DIV'er som inneholder info om delstatene */
+.state-info-div{
+  position: absolute;
+  background-size: cover;
+  border: 2px solid #000000;
+  width: 25%;
+  height: 25%;
+  display: none;
+  border-radius: 10px;
+  margin: auto;
+  padding: 20px;
+  text-shadow:0 0 3px #000000;
+  color: #fff;
+  transition: ease 1s;
+  pointer-events: none;
+  font-size: 1rem;
+}
+.state-info-div li{
+  font-size: 1rem;
+}
+/* Individuell plassering av de forskjellige delstatene */
+/* Deretter :hover animasjon etterfulgt av regler for tilhørende div'er og deres :hover */
+/* ----------------------------------------------------- */
+/* Ulrik sin kode */
+/* WEST-AUSTRALIA */
+#west-map-part{
+  top: 19.5%;
+  left: 26.5%;
+  height: 50%;
+}
+#west-map-part:hover{
+  height: 60%;
+  left: 23%;
+  top: 16%;
+}
+/* Malin sin kode */
+.west-div:hover #west-info{
+  display: block;
+  top: 5%;
+  left: 2%;
+}
+#west-info{
+  background-image: url(images/west-australia-frontpage.jpeg);
+}
+/* ----------------------------------------------------- */
+/* ----------------------------------------------------- */
+/* Ulrik sin kode */
+/* NORTH-AUSTRALIA */
+#north-map-part{
+  top: 13%;
+  left: 45.2%;
+  height: 35.5%;
+}
+#north-map-part:hover{
+  height: 40%;
+  top: 9%;
+  left: 44.5%;
+}
+/* Malin sin kode */
+.north-div:hover #north-info {
+  display: block;
+  top: 5%;
+  left: 2% ;
+}
+#north-info{
+  background-image: url(images/north-australia-frontpage.jpeg);
+}
+/* ----------------------------------------------------- */
+/* ----------------------------------------------------- */
+/* Ulrik sin kode */
+/* QUEENSLAND */
+
+#queensland-map-part{
+  height: 44%;
+  top: 12%;
+  left: 55.5%;
+}
+#queensland-map-part:hover{
+  height: 49%;
+  top: 7%;
+}
+/* Malin sin kode */
+.queensland-div:hover #queensland-info{
+  display: block;
+  right: 2%;
+  top: 5%;
+}
+#queensland-info{
+  background-image: url(images/queensland-frontpage.jpg);
+}
+/* ----------------------------------------------------- */
+/* ----------------------------------------------------- */
+/* Ulrik sin kode */
+/* NEW-SOUTH-WALES */
+
+#nsw-map-part{
+  height: 23%;
+  top: 52.4%;
+  left: 58%;
+}
+#nsw-map-part:hover{
+  height: 29%;
+  top: 51.5%;
+}
+/* Malin sin kode */
+#nsw-info{
+  background-image: url(images/nws-frontpage.jpeg);
+}
+.nsw-div:hover #nsw-info{
+  display: block;
+  top: 5%;
+  right: 2%;
+}
+/* ----------------------------------------------------- */
+/* ----------------------------------------------------- */
+/* Ulrik sin kode */
+/* SOUTH-AUSTRALIA */
+
+#south-map-part{
+  height: 28%;
+  top: 48.3%;
+  left: 45.2%;
+}
+#south-map-part:hover{
+  height: 35%;
+  left: 43.8%;
+}
+/* Malin sin kode */
+#south-australia-info{
+  background-image: url(images/queensland-frontpage.jpg);
+}
+.south-australia-div:hover #south-australia-info{
+  display: block;
+  top: 5%;
+  left: 2%;
+}
+/* ----------------------------------------------------- */
+/* ----------------------------------------------------- */
+/* Ulrik sin kode */
+/* VICTORIA */
+
+#victoria-map-part{
+  height: 14.4%;
+  top:65.3%;
+  left: 58%;
+}
+#victoria-map-part:hover{
+  height: 19%;
+  top: 65.7%;
+  left: 57.7%;
+}
+/* Malin sin kode */
+#victoria-info{
+  background-image: url(images/victoria-frontpage.jpeg);
+}
+.victoria-div:hover #victoria-info{
+  display: block;
+  top: 5%;
+  right: 2%;
+}
+/* ----------------------------------------------------- */
+/* ----------------------------------------------------- */
+/* Ulrik sin kode */
+/* TASMANIA */
+#tasmania-map-part{
+  opacity: 100%;
+  height: 9.6%;
+  top: 81%;
+  left: 63%;
+}
+#tasmania-map-part:hover{
+  height: 15%;
+  top: 79%;
+  left: 62%;
+}
+/* Malin sin kode */
+#tasmania-info{
+  background-image: url(images/tasmania-frontpage.png);
+}
+.tasmania-div:hover #tasmania-info{
+  display: block;
+  bottom: 5%;
+  right: 2%;
+}
+/* ----------------------------------------------------- */
+
+/* Her starter flavour animasjoner på forsiden */
+
+/* Posisjonering av svømmende hval som venter på :hover */
+/* Ulrik og Malin har kodet seksjonen i lag */
+#swimming-whale{
+  opacity: 0;
+  position: absolute;
+  height: 20%;
+  top: 70%;
+  left: 35%;
+  
+}
+/* Hvalen kommer frem når en :hovrer over der den ligger og venter */
+#swimming-whale:hover{
+  opacity: 100%;
+}
+
+/* Posisjonering av edderkoppen Petter, og div'en som han ligger i. */
+.spider-div{
+  position: absolute;
+  width: 25%;
+  height: 100%;
+  top: -50%;
+  left: 0;
+}
+#petter-the-spider{
+  height: 50%;
+}
+/* Når en er borti div'en til Petter kommer han ned i bildet. */
+.spider-div:hover{
+  animation: spider-drop 5s forwards;
+}
+/* Keyframes for å føre inn Petter med litt "bounce" */
+@keyframes spider-drop{
+  0%{
+      top: -50%;
+  }
+  30%{
+      top: -20%;
+  }
+  45%{
+      top: -22%;
+  }
+  100%{
+      top: -5%;
+  }
+}
+/* Stilsettning av krokodille gif */
+/* Div'en som kan hovres over for at animasjonen kommer opp */
+#croc-div{
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  top: 0;
+  right: 0;
+}
+/* Gjør animasjonen synlig */
+#croc-div:hover #croc-id{
+  display: block;
+}
+/* Plasserer animasjonen og gjør at den ikke forttsetter når en flytter musepekeren fra den skjulte div-boksen */
+#croc-id{
+  position: relative;
+  transform: translate(-50%, -50%);
+  right: 330%;
+  bottom: -240%;
+  height: 100vh;
+  display: none;
+  pointer-events: none;
+}

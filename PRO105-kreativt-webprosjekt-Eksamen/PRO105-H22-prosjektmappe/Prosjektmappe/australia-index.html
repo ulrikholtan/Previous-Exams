@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Map</title>
+    <link rel="stylesheet" href="australia-index.css" type="text/css">
+  </head>
+  <body id="frontpage-body">
+    <h1 id="main-header">Hvor vil du dra?</h1>
+    <!-- Generell container rundt alle kart-elementer -->
+    <div id="map-div">
+      <!-- Hovedbilde av Australia som ligger bak de usynlige delene -->
+      <!-- Ulrik har kodet hovedkartet og kart-delene-->
+      <img id="main-map" src="images/removed-aus-img.png" alt="australia-map">
+      <!-- Div som inneholder bilde og info om Vest Australia -->
+      <div class="west-div">
+        <img class="map-parts" id="west-map-part" src="images/territory-west.png" alt="west-territory-img">
+        <!-- Infoboksen tilhørende Vest Australia -->
+        <!-- Malin har kodet alle info-boksene som dukker opp ved hover -->
+        <div class="state-info-div" id="west-info">
+          <h1>Western Australia - <br>The Wildflower State</h1>
+          <ul>
+            <li>Størrlese: 2,529,875km², noe som tilsvarer 32,87% av Australia og er Australias største delstat.</li>
+            <li>Popilasjon: 2,1 millioner, 1,6 millioner bor i hovedstaden.</li>
+            <li>Hovedstad: Perth</li>
+            <li>Fun fact: Visste du at Vest Australia har 4 rosa innsjøer?</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Div som inneholder bilde og info om Nord Australia -->
+      <!-- Ulrik sin kode -->
+      <div class="north-div"> 
+        <img class="map-parts" id="north-map-part" src="images/territory-north.png" alt="north-territory-img">
+        <!-- Infoboksen tilhørende Nord Australia -->
+        <!-- Malin sin kode -->
+        <div class="state-info-div" id="north-info">
+          <h1>Northern Territory - <br>The Territory</h1>
+          <ul>
+            <li>Størrelse:  1,346,200 km², 15.52% av Australia og er den 3. største staten.</li>
+            <li>Populasjon: 215.000, 115,000 bor i hovedstaden.</li>
+            <li>Hovedstad: Darwin.</li>
+            <li>Fun fact: Visste du at i stedet for hester, konkurrerer de ved å ri på kameler?</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Div som inneholder bilde og info om Queenland -->
+      <!-- Ulrik sin kode -->
+      <div class="queensland-div">
+        <a href="queensland.html">
+          <img class="map-parts" id="queensland-map-part" src="images/territory-queensland.png" alt="queensland-territory-img">
+        </a>
+        <!-- Infoboksen tilhørende Queenland -->
+        <!-- Malin sin kode -->
+        <div class="state-info-div" id="queensland-info">
+          <h1>Queensland - <br>The Sunshine State</h1>
+          <ul>
+            <li>Størrelse: 1,727,200 km², det er 22,5% av Australia og er den nest største delstaten.</li>
+            <li>Populasjon: 5,185 millioner, 2,28 millioner bor i hovedstaden.</li>
+            <li>Hovedstad: Brisbane</li>
+            <li>Fun fact: Visste du at Queensland har mer enn 200 nasjonalparker? Vi anbefaler Daintree Rainforest!</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Div som inneholder bilde og info om Sør Australia -->
+      <!-- Ulrik sin kode -->
+      <div class="south-australia-div">
+        <img class="map-parts" id="south-map-part" src="images/territory-south-australia.png" alt="south-astralia-territory-img">
+        <!-- Infoboksen tilhørende Sør Australia -->
+        <!-- Malin sin kode -->
+        <div class="state-info-div" id="south-australia-info">
+          <h1>South Australia - <br>The Festival State</h1>
+          <ul>
+            <li>Størrelse: 984,000 km², det tilsvarer 12.8% av Australia, eller 4 største delstat</li>
+            <li>Populasjon: 1,6 millioner, mer en 1.1 millioner lever i hovedstaden.</li>
+            <li>Hovedstad: Adelaide</li>
+            <li>Fun fact: Visste du at Adelaide også blir kalt "The City of Churches" på grunn av byens mange kirker?</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Div som inneholder bilde og info om New South Wales -->
+      <!-- Ulrik sin kode -->
+      <div class="nsw-div">
+        <a href="nsw.html">
+          <img class="map-parts" id="nsw-map-part" src="images/territory-nsw.png" alt="new-south-wales-territory-img">
+        </a>
+        <!-- Infoboksen tilhørende New South Wales -->
+        <!-- Malin sin kode -->
+        <div class="state-info-div" id="nsw-info">
+          <h1>New South Wales - <br>The Premier State</h1>
+          <ul>
+            <li>Størrelse: 801,428 km², det er 10.4% av Australia, eller 5. største delstaten.</li>
+            <li>Populasjon: 6.8 millioner, 4,2 millioner lever i Sydney.</li>
+            <li>Hovedstad: Sydney</li>
+            <li>Fun fact: Visste du at når New South Wales ble grunnlagt i 1788, besto staten av over halvparten av Australia sitt landområde?</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Div som inneholder bilde og info om Victoria -->
+      <!-- Ulrik sin kode -->
+      <div class="victoria-div">
+        <img class="map-parts" id="victoria-map-part" src="images/territory-victoria.png" alt="victoria-territory-img">
+        <!-- Infoboksen tilhørende Victoria -->
+        <!-- Malin sin kode -->
+        <div class="state-info-div" id="victoria-info">
+          <h1>Victoria - <br>The Garden State</h1>
+          <ul>
+            <li>Størrelse: 227,600 km², det tilsvare bare 2.96% av Australia og er den 6. støsrte delstaten.</li>
+            <li>Populasjon: 5,2 millioner, 3,8 millioner bor i hovedstaden</li>
+            <li>Hovedstad: Melbourne</li>
+            <li>Fun fact: Visste du at du kan stå på ski i Victoria?</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Div som inneholder bilde og info om Tasmania -->
+      <!-- Ulrik sin kode -->
+      <div class="tasmania-div">
+        <img class="map-parts" id="tasmania-map-part" src="images/territory-tasmania.png" alt="tasmania-territory-img">
+        <!-- Infoboksen tilhørende Tasmania -->
+        <!-- Malin sin kode -->
+        <div class="state-info-div" id="tasmania-info">
+          <h1>Tasmania - <br>The Apple Isle</h1>
+          <ul>
+            <li>Størrelse: 68,330 km², bare 0,88% av Australia og er den minste delstaten</li>
+            <li>Populasjon: 493,300. 206.000 bor i hovedstaden</li>
+            <li>Hovedstad: Hobart</li>
+            <li>Fun fact: Visste du at Tasmania har den reneste luften i verden? </li>
+          </ul>
+        </div>
+      </div>
+    </div> <!--Slutt på Kart-div-->
+    <!-- Div for edderkoppen som kan hovres over, som også inneholder et bilde -->
+    <div class="spider-div">
+      <img src="images/spider-img.jpeg" alt="" id="petter-the-spider">
+    </div>
+    <!-- Enkel img for en gif på siden -->
+    <img src="GIFs/index-whale.gif" alt="" id="swimming-whale">
+    <!-- Div for krokodillen som kan hovres over, som også inneholder en gif som er usynlig frem til div-boksen blir hovret -->
+    <div id="croc-div">
+      <img src="GIFs/easter-croc.gif" alt="" id="croc-id">
+    </div>
+  </body>
+</html>
