@@ -1,0 +1,182 @@
+/*
+    CSS skal ikke (trengs ikke) røres!
+*/
+
+body{
+    margin: 0;
+    background-color: rgb(30, 40, 30);
+}
+
+#container{
+    font-family: sans-serif;
+    width: 1200px;
+    height: 660px;
+    background-color: rgb(255, 0, 0);
+    margin: auto;
+    background-image: url("../images/field.jpg");
+    background-size: cover;
+    background-position: bottom;
+    position: relative;
+    overflow: hidden;;
+}
+
+
+/*
+    ***
+    Buildings
+    ***
+*/
+#building-div{
+    position: absolute;
+    left: 50px;
+    top: 270px;
+}
+
+#building-div img{
+    width: 150px;
+}
+
+
+/*
+    ***
+    Info div
+    ***
+*/
+#info-div{
+    background-color: rgba(50, 50, 50, 0.9);    
+}
+
+#material-info{
+    padding: 1rem;
+}
+
+#container p{    
+    margin: 0;
+    background-color: rgba(50, 50, 50, 0.7);
+    color: rgb(255, 255, 255);
+    font-size: 0.9rem;    
+}
+
+
+/*
+    ***
+    Life bar
+    ***    
+*/
+#life-bar-box{
+    background-color: rgb(100, 50, 50);
+    width: 300px;
+    height: 50px;
+}
+
+#container #life-bar{
+    background-color: rgb(45, 180, 90);
+    width: 300px;
+    height: 50px;
+}
+
+
+
+/*
+    ***
+    trees
+    ***
+*/
+#tree-1, #tree-2, #tree-3{
+    position: absolute;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+#tree-1:hover, #tree-2:hover, #tree-3:hover{
+     opacity: 1;
+}
+
+
+
+#tree-1{
+    height: 250px;    
+    bottom: 0px;
+    right: 0px;
+}
+
+#tree-2{
+    height: 250px;
+    bottom: 20px;
+    right: 50px;
+}
+
+#tree-3{
+    height: 250px;
+    bottom: 15px;
+    right: -50px;
+}
+
+/*
+    ***
+    Monsters
+    ***
+*/
+#monster-div{
+    position: absolute;
+    bottom: 30px;
+    right: 300px;
+}
+
+#monster-div img{
+    height: 100px;
+}
+
+/* Endret navn :)) */
+#character-img{
+    position: absolute;
+    height: 130px;
+    bottom: 10px;
+    left: 400px;
+}
+
+#metal-mine{
+    position: absolute;
+    width: 300px;
+    bottom: -30px;
+    left: -120px;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+#metal-mine:hover{
+    opacity: 1;
+}
+
+/*
+    ***
+    Buttons
+    ***
+*/
+#button-menu button:hover{
+    cursor: pointer;
+}
+
+#button-menu img{
+    height: 50px;
+}
+
+#button-menu p{
+    padding: 1rem;
+}
+
+
+/*
+    ***
+    Output div
+    ***
+*/
+#output-div{
+    font-family: sans-serif;
+    padding: 0.5rem;
+    text-align: center;
+    width: 1200px;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    box-sizing: border-box;
+}

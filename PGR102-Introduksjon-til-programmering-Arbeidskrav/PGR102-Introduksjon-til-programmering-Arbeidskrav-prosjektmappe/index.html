@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LandsbySimulator2022</title>
+    <!-- Du trenger ikke gjøre noe med CSS-koden! -->
+    <link rel="stylesheet" href="css-skal-ikke-roeres/index.css">
+</head>
+<body>
+
+    <div id="container">     
+
+        <div id="info-div">
+            <div id="life-bar-box">
+                <progress id="life-bar" value="300" max="300">300 HP</progress><!-- Dette er selve livet (grønne baren). -->
+                <div id="life-point" style="position: absolute; top: 10px; color: white;">300/300 HP</div> <!-- Div for å få opp nummer på health-bar -->
+            </div>
+
+            <!-- Denne p-tagen inneholder informasjon om hvor mye tre og metall man har. -->
+            <p id="material-info">Treverk: 0 enheter. Metall: 0 enheter. Styrke: 10. Gold: 0;</p>
+        </div>
+
+
+        <!-- Knappemenyen -->
+        <div id="button-menu">
+            <button id="buy-building-1-btn"><img src="images/building-1.png" alt="building-1-image"><p>Kjøp (50 treverk, 10 metall)</p></button> 
+            <button id="buy-building-2-btn"><img src="images/building-3.png" alt="building-3-image"><p>Kjøp (150 treverk, 30 metall)</p></button>            
+            <button id="buy-sword-btn"><img id="sword" src="images/sword.png" alt="sword-image"><p>Kjøp sverd (200 metall)</p></button>
+            <button id="buy-potion-btn"><img id="potion" src="images/potion.png" alt="potion-image"><p>Kjøp liv (20 gold)</p></button>
+            <button id="buy-companion-btn"><img id="companion" src="images/cute-ghost.png" alt="ghost-image"><p>Kjøp en hjelper (50 gold)</p></button>
+        </div>        
+        <button id="select-character-btn"><img id="character" src="" style="top: 0; right: 0; position: absolute;"><p>Endre karakter</p></button>
+
+        <img id="character-img" src="images/female.png" alt="character-image">
+        <img id="companion-img-1" src="" style="position: absolute; height: 50px; bottom: 10px; left: 340px;">
+        <img id="companion-img-2" src="" style="position: absolute; height: 50px; bottom: 10px; left: 290px;">
+
+        <!-- Her legger man til bilder av bygninger. -->
+        <div id="building-div"></div>    
+
+        <!-- Her er output for livet til monsterene -->
+        <div id="monster-health-div" style="position: absolute; top: 60px; right: 5px; color: white;"></div>
+        
+        <!-- Her legger man til monstre (cute-wolfman.png). -->
+        <div id="monster-div">
+            <img id="monster-image1" src="">
+            <img id="monster-image2" src="">
+            <img id="monster-image3" src="">
+        </div>
+
+
+        <!-- Denne metallgruven skal man kunne klikke på for å få metall -->
+        <img id="metal-mine" src="images/metal-mine.png" alt="metal-mine-image">
+
+
+        <!-- Disse trærne skal man kunne klikke på for å få treverk for å bygge hus. -->                
+        <img id="tree-3" src="images/tree.png" alt="tree-image-3">
+        <img id="tree-2" src="images/tree.png" alt="tree-image-2">
+        <img id="tree-1" src="images/tree.png" alt="tree-image-1">
+
+    </div><!-- end container-->
+
+
+    <!-- Her skrives det ut informasjon om hva brukeren gjør og hva som skjer. -->
+    <div id="output-div" style="overflow-y: scroll; height:250px;">
+        <h2>Action Log</h2>
+        <p id="output-p"></p>
+    </div>
+
+    <script>
+        // GLOBAL VARIABLES //
+
+        var antallStyrke = 10;
+        var antallTreverk = 0;
+        var antallMetall = 0;
+        var myGold = 0;
+        var myArray = [];
+        
+        var outputP = document.getElementById("output-p");
+        var materialInfo = document.getElementById("material-info");
+        var lifeBar = document.getElementById("life-bar");
+
+
+        // CHARACTER SELECTION
+        var myCharacter = document.getElementById("character-img");
+        var characterSelectBtn = document.getElementById("select-character-btn");
+        let currenchar = 0;
+        
+        function swapCharacter(){
+            if (currenchar == 0){
+                currenchar++;
+                myCharacter.src =`images/male.png`;
+            }
+            else if (currenchar == 1){
+                currenchar--;
+                myCharacter.src =`images/female.png`;
+            }
+        }
+        characterSelectBtn.onclick = swapCharacter;
+
+
+        // FUNCTION TO UPDATE THE RESOURCE BAR //
+        function updateResources(){
+            materialInfo.innerHTML = `Treverk: ${antallTreverk} enheter. Metall: ${antallMetall} enheter. Styrke: ${antallStyrke} Gold: ${myGold}`;
+            lifePoint.innerHTML = `${hitPoints}/300 HP`;
+            monsterHealthDiv.innerHTML = `<div>Monster HP: ${monster3Health}  Monster HP: ${monster2Health} Monster HP: ${monster1Health} </div>`;
+            showArray();
+        }
+
+
+        // FUNCTION TO CALL THE ARRAY TO BE SHOWN IN ACTION LOG //
+        function showArray() {
+            document.getElementById("output-p").innerHTML = myArray.join(" ");
+        }
+        
+
+        // TREE VARIABLES //
+
+        var treeLoot = 25;
+        var treeClicks = 0;
+        var treeBtn1 = document.getElementById("tree-1");
+        var treeBtn2 = document.getElementById("tree-2");
+        var treeBtn3 = document.getElementById("tree-3");
+
+
+        // FUNCTION FOR GAINING WOOD, INCREMENT TOTAL CLICKS AND UNSHIFT INTO LOG
+        function treeHarvest(){
+            antallTreverk += treeLoot;
+            myArray.unshift("Treverk +" + treeLoot + "<br>");
+            updateResources();
+            check();
+            // FUNCTION TO SEE IF THE TREES ARE CLICKED X AMOUNT OF TIMES TO BE REMOVED
+            treeClicks++;
+            if (treeClicks >= 30){
+                treeBtn3.remove();
+            } else if (treeClicks >=20){
+                treeBtn2.remove();
+            } else if (treeClicks >=10){
+                treeBtn1.remove();
+            }
+        }
+
+
+        // CONNECT BUTTONS TO FUNCTION
+        treeBtn1.onclick = treeHarvest;
+        treeBtn2.onclick = treeHarvest;
+        treeBtn3.onclick = treeHarvest;
+
+
+        // MINE FUNCTIONS
+        var metalLoot = 10;
+        var mineBtn = document.getElementById("metal-mine");
+        function mineore(){
+            antallMetall += metalLoot;
+            myArray.unshift("Metall +"+ metalLoot + "<br>");
+            updateResources();
+            check();
+        }
+        mineBtn.onclick = mineore;
+
+
+        // BUY BUILDINGS
+        var antallBygninger = 0;
+        var buildingDiv = document.getElementById("building-div");
+        var buyBuilding1Btn = document.getElementById("buy-building-1-btn");
+
+        function buyBuilding1(){
+            if (antallTreverk < 50){
+            alert("Ikke nok treverk!");
+            } else if (antallMetall < 10){
+            alert("Ikke nok metall!");
+            }else{
+                antallTreverk -= 50, antallMetall -= 10;
+                buildingDiv.innerHTML += `<img src="images/building-1.png">`;
+                antallBygninger++;
+                myArray.unshift("Kjøpte 1-etasjes bygning for 50 treverk og 10 metall." + "<br>");
+                updateResources();
+                lifeTick();
+            }
+            if (antallBygninger == 7){
+                myArray.unshift("Du har fullført landsbyen!" + "<br>");
+                alert("YOU WIN!");
+                showArray();
+            }
+        }
+        buyBuilding1Btn.onclick = buyBuilding1;
+
+
+        // BUY BUILDING 2
+        var buyBuilding2Btn = document.getElementById("buy-building-2-btn");
+        function buyBuilding2(){
+            if (antallTreverk < 150){
+            alert("Ikke nok treverk!");
+            }else if (antallMetall < 30){
+            alert("Ikke nok metall!");
+            }else{
+                antallTreverk -= 150, antallMetall -= 30;
+                buildingDiv.innerHTML += `<img src="images/building-3.png">`;
+                antallBygninger++;
+                myArray.unshift("Kjøpte 2-etasjers bygning for 150 treverk og 30 metall." + "<br>");
+                updateResources();
+                lifeTick();
+            }
+        }
+        buyBuilding2Btn.onclick = buyBuilding2;
+
+        // BUY SWORD
+        var buySwordBtn = document.getElementById("buy-sword-btn");
+        function buySword(){
+            if (antallStyrke > 10){
+                alert("Du har allerede et sverd!");
+            }else if (antallMetall < 200){
+                alert("Ikke nok metall!");
+            }else{
+                antallMetall -= 200;
+                antallStyrke = 40;
+                myArray.unshift("Du kjøpte et sverd. Du gjør nå 40 skade!"  + "<br>");
+                updateResources();
+            }
+        }
+        buySwordBtn.onclick = buySword;
+
+        // BUY POTION
+        var buyPotionBtn = document.getElementById("buy-potion-btn");
+        function buyPotion(){
+            if (lifeBar.value === 300){
+                alert("Du har full HP!");
+            } else if (myGold < 20){
+                alert("Uh-oh! Du har ikke nok Gold!");
+            } else {
+                myGold -= 20;
+                lifeBar.value += 75;
+                hitPoints += 75;
+                myArray.unshift("Du fylte på 50 HP!" + "<br>");
+                updateResources();
+            }
+        }
+        buyPotionBtn.onclick = buyPotion;
+
+        // BUY COMPANION
+        var buyCompanionBtn = document.getElementById("buy-companion-btn");
+        var companionImage1 = document.getElementById("companion-img-1")
+        var companionImage2 = document.getElementById("companion-img-2")
+        var companionCount = 1;
+        function buyCompanion(){
+            if (companionCount == 0.5){
+                alert("Du har allerede to hjelpere!");
+            } else if (myGold < 50){
+                alert("Du har ikke nok Gold!");
+            } else if (companionCount == 0.75){
+                myGold -= 50;
+                companionImage2.src =`images/cute-ghost.png`;
+                companionCount = 0.5;
+                myArray.unshift("Du fikk en hjelper som skremmer monstrene!" + "<br>");
+                updateResources();
+            } else {
+                myGold -= 50;
+                companionImage1.src =`images/cute-ghost.png`;
+                companionCount = 0.75;
+                myArray.unshift("Du fikk en hjelper som skremmer monstrene!" + "<br>");
+                updateResources();
+            }
+        }
+        buyCompanionBtn.onclick = buyCompanion;
+
+        // MONSTER FUNCTIONS FROM HERE
+
+        // CHECK FOR MONSTER FUNCTION
+        // Random Spawn 2/10 % chance for monster
+        function check(){
+            var randomSpawn = Math.floor(Math.random()*10);
+            if (randomSpawn < 3) {
+                addMonster();
+            }
+            showArray();
+        }
+
+        // MONSTER FUNCTIONS
+
+        // Monster array for database of different monsters available
+        var monsterArray = [
+            ["images/cute-wolfman.png", "Wolf"],
+            ["images/cute-witch.png", "Witch"],
+        ];
+
+        var monsterImage1 = document.getElementById("monster-image1");
+        var monsterImage2 = document.getElementById("monster-image2");
+        var monsterImage3 = document.getElementById("monster-image3");
+
+        // Define monster health
+        var monster1Health = 0;
+        var monster2Health = 0;
+        var monster3Health = 0;
+        var monsterHealthDiv = document.getElementById("monster-health-div");
+
+        // Function for adding monsters and the conditions
+        function addMonster(){
+            var k = Math.floor(Math.random()*3)+1;
+            // Generate random number for amount of monsters. 1-3
+            var level = Math.floor(Math.random()*2);
+            // Dataset.counter used to calculate gold based on level later on
+            // If random number is 3, spawn 3
+            if (k === 3){
+                monsterImage3.src = monsterArray[level][0];
+                monsterImage3.dataset.counter = level+1;
+                monster3Health = 40*(level+1);
+                monsterImage2.src = monsterArray[level][0];
+                monsterImage2.dataset.counter = level+1;
+                monster2Health = 40*(level+1);
+                monsterImage1.src = monsterArray[level][0];
+                monsterImage1.dataset.counter = level+1;
+                monster1Health = 40*(level+1);
+                myArray.unshift(`${k} ${monsterArray[level][1]}(es) spawned!` + "<br>");
+                updateResources();
+                disableElements();
+            // If random number is 2, spawn 2
+            } else if (k == 2){
+                monsterImage2.src = monsterArray[level][0];
+                monsterImage2.dataset.counter = level+1;
+                monster2Health = 40*(level+1);
+                monsterImage1.src = monsterArray[level][0];
+                monsterImage1.dataset.counter = level+1;
+                monster1Health = 40*(level+1);
+                myArray.unshift(`${k} ${monsterArray[level][1]}(es) spawned!` + "<br>");
+                updateResources();
+                disableElements();
+            // If random number is 1, spawn 1
+            } else if (k == 1){
+                monsterImage1.src = monsterArray[level][0];
+                monsterImage1.dataset.counter = level+1;
+                monster1Health = 40*(level+1);
+                myArray.unshift(`${k} ${monsterArray[level][1]}(es) spawned!` + "<br>");
+                updateResources();
+                disableElements();
+            }
+        }
+
+        // Attack Monster 1 function
+        function monster1click(){
+            monster1Health -= `${antallStyrke}`;
+            if (monster1Health == 0){
+                monsterImage1.src = "";
+                myGold += 5*(monsterImage1.dataset.counter);
+                myArray.unshift(`A monster has died. You gained ${5*(monsterImage1.dataset.counter)} gold!` + "<br>");
+                monsterHealthDiv.innerHTML += `<div>Monster HP: ${monster1Health}</div>`;
+                updateResources();
+                enableElements();
+            }
+            lifeTick();
+        }
+
+        // Attack Monster 2 function
+        function monster2click(){
+            monster2Health -= `${antallStyrke}`;
+            if (monster2Health == 0){
+                monsterImage2.src = "";
+                myGold += 5*(monsterImage1.dataset.counter);
+                myArray.unshift(`A monster has died. You gained ${5*(monsterImage1.dataset.counter)} gold!` + "<br>");
+                updateResources();
+                enableElements();
+            }
+            lifeTick();
+        }
+
+        // Attack Monster 3 function
+        function monster3click(){
+            monster3Health -= `${antallStyrke}`;
+            if (monster3Health == 0){
+                monsterImage3.src ="";
+                myGold += 5*(monsterImage1.dataset.counter);
+                myArray.unshift(`A monster has died. You gained ${5*(monsterImage1.dataset.counter)} gold!` + "<br>");
+                updateResources();
+                enableElements();
+                
+            }
+            lifeTick();
+        }
+        monsterImage1.onclick = monster1click;
+        monsterImage2.onclick = monster2click;
+        monsterImage3.onclick = monster3click;
+
+        // Monsters Attack player function if 0 < is alive
+        var lifePoint = document.getElementById("life-point");
+        var hitPoints = 300;
+        var monsterDamage = 10;
+        function lifeTick(){
+            if(monster1Health > 0 || monster2Health > 0 || monster3Health > 0){
+                lifeBar.value -= monsterDamage*companionCount;
+                hitPoints -= monsterDamage*companionCount;
+                myArray.unshift(`The Monster(s) attack! You lose ${monsterDamage*companionCount} health.` + "<br>");
+                showArray();
+                updateResources();
+            }
+            if (lifeBar.value == "0"){
+                updateResources();
+                alert("Game over!");
+                location.reload(); // Webpage reloads once you press OK on alert
+                myArray.unshift("You died!" +"<br>");
+            }
+        }
+        // Function to diable the interactive elements in the HTML while the monters are active
+        function disableElements(){
+            if (monster1Health > 0 || monster2Health > 0 || monster3Health > 0){
+                treeBtn1.style.pointerEvents = "none";
+                treeBtn2.style.pointerEvents = "none";
+                treeBtn3.style.pointerEvents = "none";
+                mineBtn.style.pointerEvents = "none";
+                buyBuilding1Btn.style.pointerEvents = "none";
+                buyBuilding2Btn.style.pointerEvents = "none";
+            }
+        }
+        // Function to make elements interactive again once enemies are dead.
+        function enableElements(){
+                treeBtn1.style.pointerEvents = "auto";
+                treeBtn2.style.pointerEvents = "auto";
+                treeBtn3.style.pointerEvents = "auto";
+                mineBtn.style.pointerEvents = "auto";
+                buyBuilding1Btn.style.pointerEvents = "auto";
+                buyBuilding2Btn.style.pointerEvents = "auto";
+                monsterHealthDiv.innerHTML = ``;
+        }
+    </script>
+    
+</body>
+</html>
