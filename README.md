@@ -25,7 +25,7 @@ This is my GitHub organization for all finished exams.
 
 - [CYB2100, Cyberforsvar, EKSAMEN (B)](https://github.com/ulrikholtan/Previous-Exams/tree/8282eaa92a89572782ba61b58e7d1cb632afee1f/CYB2100-Cyberforsvar)
 - [ETH2100, Etisk Hacking, EKSAMEN (B)](https://github.com/ulrikholtan/Previous-Exams/tree/8282eaa92a89572782ba61b58e7d1cb632afee1f/ETH2100-Etisk-Hacking)
-- - [ETH2100, Etisk Hacking, Arbeidskrav (Bestått)](https://github.com/ulrikholtan/Previous-Exams/tree/40143a54204b1219acc3beff2ebb9eb943146cfb/ETH2100-Etisk-Hacking-Arbeidskrav)
+- - [ETH2100, Etisk Hacking, Arbeidskrav (Bestått)](https://github.com/ulrikholtan/Previous-Exams/tree/fc818d40a0b73075aa6bb6c4edc70b5fefc50259/ETH2100-Etisk-Hacking-Arbeidskrav)
 - [SKY2100, Cloud Security, EKSAMEN (A)](https://github.com/ulrikholtan/Previous-Exams/tree/8282eaa92a89572782ba61b58e7d1cb632afee1f/SKY2100-Cloudsecurity)
 
 ### Fourth Semester
