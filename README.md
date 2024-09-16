@@ -18,8 +18,8 @@ This is my GitHub organization for all finished exams.
 
 ### Second Semester
 
-- [TK2100, Informasjonssikkerhet, EKSAMEN (Bestått)](https://github.com/ulrikholtan/Previous-Exams/tree/34cfd87ed6adefa16a525227f093297391bc7701/TK2100-Informasjonssikkerhet-Eksamen)
 - [PGR110, Visual Analytics, EKSAMEN (Bestått)](https://github.com/ulrikholtan/Previous-Exams/tree/c9c9c41ecdb75bd9944ac62df66925c8d577d8df/PGR110-Visual-Analytics-Exam)
+- [TK2100, Informasjonssikkerhet, EKSAMEN (Bestått)](https://github.com/ulrikholtan/Previous-Exams/tree/34cfd87ed6adefa16a525227f093297391bc7701/TK2100-Informasjonssikkerhet-Eksamen)
 - PGR112, Objektorientert Programmering (Java), EKSAMEN (Bestått)
 
 ### Third Semester
